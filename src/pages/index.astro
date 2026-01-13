@@ -1,11 +1,54 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<div
+		class="bg-white p-12 rounded-2xl shadow-xl border border-zinc-100 max-w-lg w-full"
+	>
+		<!-- Icono de Construcción Sutil -->
+		<div
+			class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-6"
+		>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="h-8 w-8 text-blue-600"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke="currentColor"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-width="2"
+					d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+				></path>
+			</svg>
+		</div>
+
+		<h1 class="text-2xl font-bold mb-4 tracking-tight">
+			Estamos actualizando nuestra plataforma
+		</h1>
+		<p class="text-zinc-500 mb-8 leading-relaxed">
+			PMServicios está realizando mejoras en su infraestructura digital
+			para brindarle un mejor servicio.
+		</p>
+
+		<div
+			class="inline-block px-4 py-2 bg-zinc-100 rounded text-xs font-mono text-zinc-500"
+		>
+			Estado: Migración de Servidores...
+		</div>
+
+		<div class="mt-8 pt-8 border-t border-zinc-100">
+			<p class="text-sm text-zinc-400">
+				Desarrollado por <a
+					href="https://octalink.cl"
+					class="text-orange-600 hover:underline">Octalink</a>
+			</p>
+		</div>
+	</div>
 </Layout>
